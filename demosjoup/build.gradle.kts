@@ -1,16 +1,16 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '2.3.21'
+    kotlin("jvm") version "2.3.21"
 }
 
-group = 'org.lugo'
-version = '1.0-SNAPSHOT'
+group = "org.lugo"
+version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation 'org.jetbrains.kotlin:kotlin-test'
+    testImplementation(kotlin("test"))
     implementation("org.jsoup:jsoup:1.23.1")
 }
 
@@ -18,6 +18,6 @@ kotlin {
     jvmToolchain(21)
 }
 
-test {
+tasks.test {
     useJUnitPlatform()
 }
