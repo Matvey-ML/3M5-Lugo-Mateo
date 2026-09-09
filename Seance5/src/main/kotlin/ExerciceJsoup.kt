@@ -1,7 +1,6 @@
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 import org.jsoup.select.Elements
-import java.io.IOException
 
 fun main(){
     println("Entrez une url")
